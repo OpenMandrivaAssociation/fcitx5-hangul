@@ -6,11 +6,14 @@ Source0:	https://github.com/fcitx/fcitx5-hangul/archive/refs/tags/%{version}.tar
 URL:		https://github.com/fcitx/fcitx5-hangul
 License:	LGPLv2
 Group:		System/Internationalization
+
 BuildRequires:	cmake
 BuildRequires:	extra-cmake-modules
 BuildRequires:	fcitx5-devel
 BuildRequires:	lib64hangul-devel
 BuildRequires:	lib64gettext-devel
+
+Requires: libhangul
 
 %description
 Hangul (Korean IM) plugin for fcitx5.
